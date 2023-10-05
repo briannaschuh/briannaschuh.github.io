@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brianna Schuh</title>
+<!-- Link to CSS file -->
+<link rel="stylesheet" href="styles.css">
+<!-- Link to Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body id = "bootstrap-overrides">
+    <!-- Banner -->
+    <div class = "banner-container">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education" onclick="collapseNavbar()">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience" onclick="collapseNavbar()">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" onclick="collapseNavbar()">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" onclick="collapseNavbar()">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" onclick="collapseNavbar()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex align-items-center justify-content-center position-relative">
+            <div class="form-check form-switch form-switch-md">
+                <input class="form-check-input" type="checkbox" role="switch" id="color-mode-toggle">
+            </div>
+        </div>
+        
+    </div>
+    <!-- Scroll to top button-->
+    <div id="scroll-to-top">
+        <img src="icons/up-arrow.png" alt="Scroll to Top">
+    </div>
+
+    <!-- Main content  -->
+    <div class="main-content">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start"> 
+                    <div class="name-and-title">
+                        <h1 class="profile-name">Brianna Schuh</h1>
+                        <h2 class="job-title">Data Scientist</h2>
+                        <p class="main-text">Hi! I'm a data scientist in the FinTech industry. I recently graduated with a B.S. in Statistics and Data Science from Yale University. I'm interested in statistical optimization and deep learning.</p>
+                        
+                        <!-- Container for icons -->
+                        <div class="icon-container">
+                            <a href="https://github.com/briannaschuh" target="_blank">
+                                <img id="main-github-icon" class="project-icon github-icon" src="icons/github-mark.png" alt="GitHub">
+                            </a>
+                            <a href="https://linkedin.com/in/briannaschuh" target="_blank">
+                                <img id="profile-linkedin-icon" class="project-icon linkedin-icon" src="icons/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="pdfs/Brianna Schuh Website Resume Sep 2023.pdf" target="_blank">
+                                <img class="project-icon pdf-icon" src="icons/pdf.png" alt="PDF">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 text-center"> 
+                    <div class="box bschuh">
+                        <div class="spin-container">
+                            <div class="shape">
+                                <div class="bd">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Education section -->
+    <div id="education" class="section bootstrap-overrides">
+        <!-- Yale details -->
+        <h2 class="section-font fade-in">Education</h2>
+        <div class = "subsection fade-in">
+            <div class="details">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <h3 class = "school-company"> 
+                                <a href="https://yalecollege.yale.edu" target="_blank">Yale University</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="city">New Haven, CT</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="degree">B.S. in Statistics and Data Science</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="edu-date">August 2019 - May 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Yale Extracurriculars and Activities -->
+            <h4 class="add-info">Extracurriculars and Activities
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#yale1" aria-expanded="false" aria-controls="yale1">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>
+            <div class="add-info-container">
+                <ul id="yale1" class="add-info-list collapse">
+                    <li class="add-info-item">First-Year Scholars at Yale (FSY) (Participant)</li>
+                    <li class="add-info-item">Club Colombia (Member)</li>
+                    <li class="add-info-item">Splash at Yale (Instructor)</li>
+                    <li class="add-info-item">Matriculate (Advising Fellow)</li>
+                    <li class="add-info-item">Kappa Kappa Gamma Sorority (Events Co-Chair, President)</li>
+                    <li class="add-info-item">Global Research and Consulting Group (Associate Consultant, Case Team Lead)</li>
+                    <li class="add-info-item">Hispanic Capital Group (Equity Analyst)</li>
+                    <li class="add-info-item">Code Haven (Student Mentor)</li>
+                </ul>
+            </div>
+            <!-- Yale Relavent Cousework -->
+            <h4 class="add-info">Relavent Coursework
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#yale2" aria-expanded="false" aria-controls="yale2">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>
+            <div class="add-info-container">
+                <ul id = "yale2" class = "add-info-list collapse">
+                    <li class = "add-info-item"> Advanced Data Analysis</li>
+                    <li class = "add-info-item"> Artificial Intelligence</li>
+                    <li class = "add-info-item"> Big Data</li>
+                    <li class = "add-info-item"> Computability & Logic</li>
+                    <li class = "add-info-item"> Computational Intelligence for Games</li>
+                    <li class = "add-info-item"> Computational Tools for Data Science</li>
+                    <li class = "add-info-item"> Computing & Programming</li>
+                    <li class = "add-info-item"> Data Exploration & Analysis</li>
+                    <li class = "add-info-item"> Discrete Mathematics</li>
+                    <li class = "add-info-item"> Information Systems</li>
+                    <li class = "add-info-item"> Intermediate Machine Learning</li>
+                    <li class = "add-info-item"> Introduction to Engineering Analysis</li>
+                    <li class = "add-info-item"> Linear Algebra & Matrix Theory</li>
+                    <li class = "add-info-item"> Linear Models</li>
+                    <li class = "add-info-item"> Multivariable Calculus</li>
+                    <li class = "add-info-item"> Multivariate Statistical Methods</li>
+                    <li class = "add-info-item"> Ordinary & Partial Differential Equations</li>
+                    <li class = "add-info-item"> Probability Theory</li>
+                    <li class = "add-info-item"> Theory of Statistics</li>
+                    <li class = "add-info-item"> Vector Analysis</li>
+                </ul>
+            </div>
+            <!-- Yale Awards -->
+            <h4 class="add-info">Awards
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#yale3" aria-expanded="false" aria-controls="yale3">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>
+            <div class = "add-info-container">
+                <ul id = "yale3" class = "add-info-list collapse">
+                    <li class = "add-info-item">Jonathan Edwards College: Henry Edwards Ellsworth Prize in Science and Mathematics (May 2023)</li>
+                    <li class = "add-info-item">Kappa Kappa Gamma Foundation: Kappa Kappa Gamma Foundation Scholarship (May 2022)</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Terra details -->
+        <div class = "subsection fade-in">
+            <div class="details" id = "terra">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <h3 class = "school-company">
+                                <a href="https://terrawolves.com" target="_blank">TERRA Environmental Research Institute</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="city">Miami, FL</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="degree">High School Diploma</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="edu-date">August 2015 - June 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Terra Extracurriculars and Activities -->
+            <h4 class="add-info">Extracurriculars and Activities
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#terra1" aria-expanded="false" aria-controls="terra1">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>
+            <div class="add-info-container">
+                <ul id = "terra1" class = "add-info-list collapse">
+                    <li class = "add-info-item"> Engineering Club (Secretary)</li>
+                    <li class = "add-info-item"> Interact Club (Member)</li>
+                    <li class = "add-info-item"> Math Honor Society (Tutor)</li>
+                    <li class = "add-info-item"> National Honor Society (Senior Representative)</li>
+                </ul>
+            </div>
+            <!-- Terra Relavent Coursework -->
+            <h4 class="add-info">Relavent Coursework
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#terra2" aria-expanded="false" aria-controls="terra2">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>
+            <div class="add-info-container">
+                <ul id = "terra2" class = "add-info-list collapse">
+                    <li class = "add-info-item"> Advanced Technology Applications</li>
+                    <li class = "add-info-item"> AP Calculus AB</li>
+                    <li class = "add-info-item"> AP Calculus BC</li>
+                    <li class = "add-info-item"> AP Physics C: Mechanics</li>
+                    <li class = "add-info-item"> AP Physics C: Electricity and Magnetism</li>
+                    <li class = "add-info-item"> Applied Engineering Technology 1, 2, and 3</li>
+                </ul>
+            </div>
+            <!-- Terra Awards -->
+            <h4 class="add-info">Awards
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#terra3" aria-expanded="false" aria-controls="terra3">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>
+            <div class = "add-info-container">
+                <ul id = "terra3" class = "add-info-list collapse">
+                    <li class = "add-info-item"> JPMorgan Chase & Co.: JPMC Children's Scholarship (July 2019) </li>
+                    <li class = "add-info-item"> Florida Department of Education: Florida Gold Seal of Biliteracy (Spanish) (June 2019)</li>
+                    <li class = "add-info-item"> Miami-Dade County Public Schools: Scholar Designation (June 2019)</li>
+                    <li class = "add-info-item"> Miami-Dade County Public Schools: Superintendent's Diploma of Distinction (June 2019)</li>
+                    <li class = "add-info-item"> Miami Herald: Miami Herald Silver Knight Business Nominee (May 2019)</li>
+                </ul>
+            </div>
+        </div>    
+        <!-- MIT details -->
+        <div class = "subsection fade-in">
+            <div class="details" id = "mit">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <h3 class = "school-company">
+                                <a href="https://mites.mit.edu/discover-mites/mites-summer/" target="_blank">Massachusetts Institute of Technology (MIT)</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="city">Cambridge, MA</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="degree">Program: MIT Introduction to Technology, Engineering, and Science (MITES)</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="edu-date">June 2018 - August 2018</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MIT Coursework -->
+            <h4 class="add-info">Coursework
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#mit1" aria-expanded="false" aria-controls="mit1">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>
+            <div class = "add-info-container">
+                <ul id = "mit1" class = "add-info-list collapse">
+                    <li class = "add-info-item"> Chemistry</li>
+                    <li class = "add-info-item"> Electronics</li>
+                    <li class = "add-info-item"> Humanities</li>
+                    <li class = "add-info-item"> Integral Calculus</li>
+                    <li class = "add-info-item"> Statistical Mechanical Physics</li>
+                </ul>
+            </div>
+            <!-- MIT Awards -->
+            <h4 class="add-info">Awards
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#mit2" aria-expanded="false" aria-controls="mit2">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>
+            <div class ="add-info-container">
+                <ul id = "mit2" class = "add-info-list collapse">
+                    <li class = "add-info-item"> Electronics: The Spirit of the Class (August 2018) </li>
+                    <li class = "add-info-item"> Integral Calculus: The Spirit of the Class (August 2018)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Experience -->
+    <div id="experience" class="section bootstrap-overrides">
+        <h2 class="section-font fade-in">Experience</h2>
+        <div class = "subsection fade-in">
+            <div class="details">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <h3 class = "school-company">
+                                <a href="https://www.bnymellon.com" target="_blank">BNY Mellon</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="city">New York, NY</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="degree">Data Scientist</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="edu-date">August 2023 - Present</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BNY Mellon Tasks -->
+            <div class = "add-info-container">
+                <ul class = "experience-list">
+                    <li class = "job-text">Working on AI Hub as a Software Engineering and Technology University Program (SETUP) Data Scientist.</li>
+                </ul>
+            </div>
+            <!-- BNY Mellon Tech Stack -->
+            <h4 class="add-info">Tech Stack
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#bny2" aria-expanded="false" aria-controls="bny2">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>        
+            <div class = "add-info-container">
+                <ul id = "bny2" class = "add-info-list collapse">
+                    <li class = "add-info-item"> Python</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Bloomberg Intership Details -->
+        <div class = "subsection fade-in">
+            <div class="details" id = "bloomberg">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <h3 class = "school-company">
+                                <a href="https://www.bloomberg.com/company" target="_blank">Bloomberg LP</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="city">Princeton, NJ</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="degree">Data Analyst Intern</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="edu-date">June 2022 - August 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bloomberg Internship Tasks -->
+            <div class = "add-info-container">
+                <ul class = "experience-list">
+                    <li class ="job-text">Created an internal Bloomberg app that optimizes the workflow of minimizing Foreign Exchange (FX) Bloomberg Generic Price (BGN) volatility through utilizing statistical methods and plots.</li>
+                    <li class = "job-text">Designed a proof of concept automation workflow for bank loan submissions that include Python microservices akin to Apache Airflow, Apache HBase, and AWS Lambda. </li>
+                    <li class = "job-text">Collaborated with seven other interns to create an internal Bloomberg app that automates up to 2,342 news stories on the highlights of the Housing Price Index (HPI). </li>
+                    <li class = "job-text">Received a full-time return offer upon graduation from college. </li>
+                </ul>
+            </div>
+            <!-- Bloomberg Internship Tech Stack -->
+            <h4 class="add-info">Tech Stack
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#bloomberg2" aria-expanded="false" aria-controls="bloomberg2">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>
+            <div class = "add-info-container">
+                <ul id = "bloomberg2" class = "add-info-list collapse">
+                    <li class = "add-info-item"> Bloomberg API</li>
+                    <li class = "add-info-item"> Bloomberg Terminal</li>
+                    <li class = "add-info-item"> BQL (similar to SQL)</li>
+                    <li class = "add-info-item"> BQuant (similar to Jupyter Notebook)</li>
+                    <li class = "add-info-item"> Git</li>
+                    <li class = "add-info-item"> Jira </li>
+                    <li class = "add-info-item"> Matplotlib </li>
+                    <li class = "add-info-item"> NumPy</li>
+                    <li class = "add-info-item"> Pandas</li>
+                    <li class = "add-info-item"> PostgreSQL</li>
+                    <li class = "add-info-item"> Python</li>
+                    <li class = "add-info-item"> scikit-learn</li>
+                </ul>
+            </div>
+        </div>
+        <!-- S&P Jones Indices Details -->
+        <div class = "subsection fade-in">
+            <div class="details" id = "sp">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <h3 class = "school-company">
+                                <a href="https://www.spglobal.com/spdji/en/" class="school-company" target="_blank">S&P Dow Jones Indices</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="city">New York, NY</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="degree">Inside Sales Intern</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="edu-date">June 2021 - August 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- S&P Dow Jones Indices Tasks -->
+            <div class = "add-info-container">
+                <ul class = "experience-list">
+                    <li class = "job-text">Led data analytics projects with the Asset Owners (AO) Client Coverage Team, AO Marketing Team, and AO Investment Consulting Team. </li>
+                    <li class = "job-text">Analyzed over 25,000 entries of sales data, marketing data, and investment consulting data to support the design of new indices. </li>
+                    <li class = "job-text">Enhanced the accuracy of the Salesforce database by 16% and the accuracy of the Marketo database by 8%.</li>
+                </ul>
+            </div>
+            <!-- S&P Dow Jone Indices Tech Stack -->
+            <h4 class="add-info">Tech Stack
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#sp2" aria-expanded="false" aria-controls="sp2">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>     
+            <div class = "add-info-container">
+                <ul id = "sp2" class = "add-info-list collapse">
+                    <li class = "add-info-item"> Marketo</li>
+                    <li class = "add-info-item"> Microsoft Excel</li>
+                    <li class = "add-info-item"> Salesforce.com</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Bloomberg Externship Details -->
+        <div class = "subsection fade-in">
+            <div class="details" id = "extern">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <h3 class = "school-company">
+                                <a href="https://www.bloomberg.com/company" target="_blank">Bloomberg LP</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="city">Princeton, NJ</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="degree">Global Data Extern</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-format">
+                            <span class="edu-date">May 2021 - May 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bloomberg Externship Tasks -->
+            <div class = "add-info-container">
+                <ul class = "experience-list">
+                    <li class = "job-text"> Worked on an Environmental, Social, and Governance (ESG) case study using RStudio and the Bloomberg Terminal under the guidance of data professionals and presented it to Bloomberg leadership. </li>
+                </ul>
+            </div>
+            <!-- Bloomberg Externship Tech Stack -->
+            <h4 class="add-info">Tech Stack
+                <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#extern2" aria-expanded="false" aria-controls="extern2">
+                    <span class="arrow-icon arrow-icon"></span>
+                </button>
+            </h4>  
+            <div class = "add-info-container">
+                <ul id = "extern2" class = "add-info-list collapse">
+                    <li class = "add-info-item"> Bloomberg Terminal</li>
+                    <li class = "add-info-item"> ggplot2</li>
+                    <li class = "add-info-item"> Microsoft Excel</li>
+                    <li class = "add-info-item"> R</li>
+                    <li class = "add-info-item"> RStudio</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section#bootstrap-overrides">
+        <h2 class = "section-font fade-in">Skills</h2>
+        <!-- Programming Languages -->
+        <div class = "subsection fade-in">
+            <div id = "programming-languages" class = "details">
+                <h3 class = "school-company">Programming Languages</h3>
+                <h4 class = "add-info"> Proficient</h4>
+                <div class = "add-info-container">
+                    <ul class = "experience-list">
+                        <li class = "job-text"> Python, R </li>
+                    </ul>
+                </div>
+                <h4 class = "add-info"> Familiar</h4>
+                <div class = "add-info-container">
+                    <ul class = "experience-list">
+                        <li class = "job-text"> SQL, HTML/CSS, JavaScript </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Frameworks and Libraries -->
+        <div class = "subsection fade-in">
+            <div id = "frameworks" class = "details">
+                <h3 class = "school-company">Frameworks and Libraries</h3>
+                <h4 class = "add-info"> Proficient</h4>
+                <div class = "add-info-container">
+                    <ul class = "experience-list">
+                        <li class = "job-text"> Python (Keras, TensorFlow, scikit-learn, Pandas, NumPy, SciPy), R (car, klaR, ks, dplyr, tidyr, ggplot2, glmnet)</li>
+                    </ul>
+                </div>
+                <h4 class = "add-info"> Familiar</h4>
+                <div class = "add-info-container">
+                    <ul class = "experience-list">
+                        <li class = "job-text"> Python (PyTorch, seaborn, Matplotlib, Flask), R (randomForest, Shiny, Leaflet, caret), Bootstrap </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Tools and Technologies -->
+        <div class="subsection fade-in">
+            <div id = "tools" class = "details">
+                <h3 class = "school-company">Tools and Technologies</h3>
+                <h4 class = "add-info"> Proficient</h4>
+                <div class = "add-info-container">
+                    <ul class = "experience-list">
+                        <li class = "job-text"> Jupyter Notebook, RStudio, Visual Studio Code (VS Code)</li>
+                    </ul>
+                </div>
+                <h4 class = "add-info"> Familiar</h4>
+                <div class = "add-info-container">
+                    <ul class = "experience-list">
+                        <li class = "job-text"> Git, Jira, PostgreSQL, Sublime Text</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="section#bootstrap-overrides">
+        <h2 class = "section-font fade-in">Projects</h2>
+        <!-- Portfolio Website -->
+        <div class = "subsection fade-in">
+            <div id = "portfolio-website" class = "details">
+                <h3 class = "school-company">
+                    Portfolio Website
+                    <a href="https://github.com/briannaschuh/portfolio-website" target="_blank">
+                        <img id="portfolio-github-icon" class="project-icon github-icon" src="icons/github-mark.png" alt="GitHub">
+                    </a>  
+                    <a href="https://briannaschuh.github.io/main/" target="_blank">
+                        <img class = "project-icon" src="icons/link-icon.png" alt="Website">
+                    </a>
+                </h3>
+                <div class = "add-info-container">
+                    <ul class = "experience-list">
+                        <li class = "job-text"> Taught myself HTML, CSS, and JavaScript in order to create a website to showcase my portfolio. </li>
+                        <li class = "job-text"> Ensured that the website adapts to different screen sizes, including mobile phones, tablets, and desktops. </li>
+                        <li class = "job-text"> Leveraged Bootstrap to streamline the website's layout design.</li>
+                    </ul>
+                </div>
+                <h4 class="add-info">Tech Stack
+                    <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#portfolio" aria-expanded="false" aria-controls="portfolio">
+                        <span class="arrow-icon arrow-icon"></span>
+                    </button>
+                </h4>  
+                <div class = "add-info-container">
+                    <ul id = "portfolio" class = "add-info-list collapse">
+                        <li class = "add-info-item"> Bootstrap</li>
+                        <li class = "add-info-item"> HTML/CSS</li>
+                        <li class = "add-info-item"> JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Senior Thesis -->
+            <div class = "subsection fade-in">
+                <div id = "senior-thesis" class = "details">
+                    <h3 class = "school-company">
+                        Exploring Password Complexity
+                        <a href="https://github.com/briannaschuh/s-ds492" target="_blank">
+                            <img id="s-ds492-github-icon" class="project-icon github-icon" src="icons/github-mark.png" alt="GitHub">
+                        </a>  
+                        <a href="pdfs/Senior-Project-Final.pdf" target="_blank">
+                            <img class="project-icon pdf-icon" src="icons/pdf.png" alt="PDF">
+                        </a>
+                    </h3>
+                    <div class = "add-info-container">
+                        <ul class = "experience-list">
+                            <li class = "job-text"> Performed a comprehensive analysis of password complexity using Dropbox's zxcvbn algorithm and supervised and unsupervised learning methods to fulfil the senior project requirement at Yale. </li>
+                            <li class = "job-text"> Engineered seven key features using Python to capture underlying patterns in 700,000 randomly selected passwords from the 2015 000webhost data breach.</li>
+                            <li class = "job-text"> Employed TensorFlow and Keras to build Convolutional Neural Networks (CNNs) and Multilayer Perceptrons (MLPs) for password strength classification.</li>
+                            <li class = "job-text"> Utilized k-means clustering with sklearn and performed an exploratory analysis through Principal Component Analysis (PCA).</li>
+                            <li class = "job-text"> Identified the complementarity of supervised and unsupervised models in understanding password evaluation and detecting subtle patterns.</li>
+                            <li class = "job-text"> Awarded the Henry Edwards Ellsworth Prize in Science and Mathematics by the fellows of Jonathan Edwards College for completing the most distinguished senior thesis.</li>
+                        </ul>
+                    </div>
+                    <h4 class="add-info">Tech Stack
+                        <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#senior-project" aria-expanded="false" aria-controls="senior-project">
+                            <span class="arrow-icon arrow-icon"></span>
+                        </button>
+                    </h4>  
+                    <div class = "add-info-container">
+                        <ul id = "senior-project" class = "add-info-list collapse">
+                            <li class = "add-info-item"> Jupyter Notebook</li>
+                            <li class = "add-info-item"> k-means clustering</li>
+                            <li class = "add-info-item"> Keras</li>
+                            <li class = "add-info-item"> LaTeX</li>
+                            <li class = "add-info-item"> Matplotlib</li>
+                            <li class = "add-info-item"> NumPy</li>
+                            <li class = "add-info-item"> Pandas</li>
+                            <li class = "add-info-item"> Python</li>
+                            <li class = "add-info-item"> scikit-learn</li>
+                            <li class = "add-info-item"> TensorFlow</li>
+                            <li class = "add-info-item"> VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Cribbage AI -->
+            <div class = "subsection fade-in">
+                <div id = "cribbage-ai-proj" class = "details">
+                    <h3 class = "school-company">
+                        Applications of Genetic Algorithms to Cribbage
+                        <a href="https://github.com/briannaschuh/cpsc474" target="_blank">
+                            <img id="cpsc474-github-icon" class="project-icon github-icon" src="icons/github-mark.png" alt="GitHub">
+                        </a>                                            
+                        <a href="https://www.youtube.com/watch?v=h_wqpSOJAPg" target="_blank">
+                            <img class = "project-icon" src="icons/link-icon.png" alt="Website">
+                        </a>
+                    </h3>
+                    <div class = "add-info-container">
+                        <ul class = "experience-list">
+                            <li class = "job-text"> Developed and implemented a genetic algorithm to optimize a custom cribbage policy for pegging cards.</li>
+                            <li class = "job-text"> Created the entire project using Python, personally coding all genetic algorithm functions (such as fitness evaluation, selection, crossover, and mutation) without using external GA libraries.</li>
+                            <li class = "job-text"> Assessed the genetic algorithm's performance by incorporating a hill climbing method for comparative analysis.</li>
+                            <li class = "job-text"> Achieved a policy with a score of 0.2854, signifying an expected gain of 0.2854 match points per game compared to a greedy agent.</li>
+                        </ul>
+                    </div>
+                    <h4 class="add-info">Tech Stack
+                        <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#cribbage-ai" aria-expanded="false" aria-controls="cribbage-ai">
+                            <span class="arrow-icon arrow-icon"></span>
+                        </button>
+                    </h4>  
+                    <div class = "add-info-container">
+                        <ul id = "cribbage-ai" class = "add-info-list collapse">
+                            <li class = "add-info-item"> Python</li>
+                            <li class = "add-info-item"> VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Premier League -->
+            <div class = "subsection fade-in">
+                <div id = "s-ds363" class = "details">
+                    <h3 class = "school-company">
+                        Multivariate Exploratory Analysis on the Premier League
+                        <a href="https://github.com/briannaschuh/s-ds363" target="_blank">
+                            <img id="s-ds363-github-icon" class="project-icon github-icon" src="icons/github-mark.png" alt="GitHub">
+                        </a>  
+                        <a href="pdfs/S&DS 363 - Final Project.pdf" target="_blank">
+                            <img class="project-icon pdf-icon" src="icons/pdf.png" alt="PDF">
+                        </a>
+                    </h3>
+                    <div class = "add-info-container">
+                        <ul class = "experience-list">
+                            <li class = "job-text"> Conducted a multivariate exploratory analysis of Premier League player data from FIFA 20.</li>
+                            <li class = "job-text"> Considered 23 variables, including overall skill, wage, mentality composure, and movement agility.  </li>
+                            <li class = "job-text"> Utilized multivariate statistical methods for analysis, including MANOVA (Multivariate Analysis of Variance) to compare means across positions, discriminant analysis to explore categorization based on variables, and Principal Component Analysis (PCA) to identify underlying patterns.</li>
+                            <li class = "job-text"> Proposed development of new models considering interactions and broader relationships among variables. </li>
+                        </ul>
+                    </div>
+                    <h4 class="add-info">Tech Stack
+                        <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#multivariate" aria-expanded="false" aria-controls="multivariate">
+                            <span class="arrow-icon arrow-icon"></span>
+                        </button>
+                    </h4>  
+                    <div class = "add-info-container">
+                        <ul id = "multivariate" class = "add-info-list collapse">
+                            <li class = "add-info-item"> car</li>
+                            <li class = "add-info-item"> klaR</li>
+                            <li class = "add-info-item"> ks</li>
+                            <li class = "add-info-item"> R</li>
+                            <li class = "add-info-item"> RStudio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section#bootstrap-overrides">
+        <h2 class = "section-font fade-in">Contact</h2>
+        <div class = "subsection fade-in">
+            <p>If you would like to discuss AI/ML, seek advice, or potentially work together on a project, please feel free to reach out to me on LinkedIn. </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

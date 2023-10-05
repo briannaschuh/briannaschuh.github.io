@@ -1,0 +1,600 @@
+/* Light Mode Styles (default) */
+body#bootstrap-overrides {
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    scroll-behavior: smooth;
+    padding: 10%;
+    padding-top: 2%;
+}
+
+/* Default font size */
+html {
+  font-size: 16px;
+}
+
+/* Navbar colors */ 
+.navbar#bootstrap-overrides {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Hide the content of navbar when collapsed */
+.collapse.navbar-collapse {
+  overflow: hidden; 
+}
+
+/* Dark Mode Styles */
+body#bootstrap-overrides.dark-mode {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+/* Navbar darkmode colors */
+body#bootstrap-overrides.dark-mode .navbar {
+    background-color: #333 !important;
+    color: #f8f9fa !important;
+}
+
+/* Toggle Color Mode */
+.color-mode-btn {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Form-switch container */
+.form-check.form-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem; /* Adjust as needed */
+}
+
+/* After it has been checked */
+.form-switch.form-switch-md .form-check-input {
+  height: 1.5rem;
+  width: calc(2rem + 0.75rem);
+  border-radius: 3rem;
+}
+
+/* Define CSS variables for icon sources */
+:root {
+  --github-icon-light: url("icons/github-mark.png");
+  --github-icon-dark: url("icons/github-mark-white.png");
+}
+
+/* Default styles for the GitHub icon */
+.github-icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out; 
+  background-image: var(--github-icon-light);
+}
+
+/* Toggle github icon when dark mode is turned on */
+body.dark-mode .github-icon {
+  background-image: url("icons/github-mark-white.png"); /* Use the white icon for dark mode */
+}
+
+/* Light Mode Styles */
+body#bootstrap-overrides {
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    padding: 10%;
+    padding-top: 2%;
+}
+
+/* Container for navbar and toggle button */
+.banner-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+/* Scroll to top button */
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+/* Image for the scroll to top button */
+#scroll-to-top img {
+  width: 2rem; 
+  height: 2rem;
+}
+
+/* My image */
+.bschuh {
+    position: relative;
+    top: 0%;
+    left: 50%;
+    width: auto;
+    height: 300px;
+    transform: translate(-40%, 75px);
+    overflow: hidden;
+}
+
+/* Styles for main part of my page */
+.main-content {
+    padding: 20px;
+    height: auto;
+    position: relative;
+    margin-bottom: 20rem;
+    margin-top: 3rem;
+}
+
+/* My name */
+.profile-name {
+    font-size: 5rem;
+    font-family: 'CustomFont', sunny-spells;
+    margin-bottom: -2%;
+
+}
+
+/* Job title */
+.job-title {
+    font-size: 3rem;
+    font-family: 'CustomFont', sunny-spells;
+    margin-bottom: -0.5%;
+}
+
+/* Text on the main content of my page */
+.main-text {
+    font-size: 1rem;
+    position: relative;
+    max-width: 50%;
+    word-wrap: break-word;
+    left: 25%;
+}
+
+/* Container for my name, title, and description */
+.name-and-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: -30%;
+  transform: translate(0, 75px);
+}
+
+/* Additional information styles for subsections */
+.add-info {
+    font-size: 1rem;
+    margin-top: 1%;
+    text-decoration: underline;
+    margin-bottom: 0; 
+}
+
+/* List styles */
+.add-info-list {
+    list-style-type: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Individual items in a list */
+.add-info-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    font-size: 0.85rem;
+    color: #333;
+    border-radius: 0.5rem; 
+    display: inline-block;
+}
+
+/* Font size for job text */
+.job-text {
+  font-size: 0.95rem;
+}
+
+/* Job tasks*/
+.experience-list {
+    margin-top: 2%;
+    list-style-type: disc;
+    margin-left: 20px; 
+}
+
+/* Top margins for subsections in each section */
+.details#terra, .details#mit, .details#bloomberg, .details#sp, .details#extern, .details#frameworks, .details#tools, .details#senior-thesis, .details#cribbage-ai-proj, .details#s-ds363 {
+  margin-top: 2.5rem;
+}
+
+/* Icons */
+.project-icon {
+  width: 1.5rem; 
+  height: 1.5rem; 
+}
+
+/* External font */
+@font-face {
+    font-family: 'sunny-spells'; 
+    src: url('fonts/sunny-spells-font/SunnyspellsRegular-MV9ze.otf') format('truetype');
+  }
+
+/* Animation for how navbar collaspes/expands on small devices */
+.navbar, #color-mode-toggle, .main-content, .main-content * {
+  animation: fadeIn 1.5s ease-out
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Manage fade-ins for sections */
+.section-font.fade-in, .subsection.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+
+/* General fade-ins */
+.fade-in.active {
+  opacity: 1;
+}
+
+ /* Styles for both light and dark themes */
+.section#bootstrap-overrides {
+    background-color: #f8f9fa; 
+    color: #333; 
+}
+
+/* Styles for dark mode */
+body#bootstrap-overrides.dark-mode .section#bootstrap-overrides {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+/* Font for headings */
+.section-font {
+    font-family: 'CustomFont', sunny-spells;
+    font-size: 3rem;
+    margin-top: 10%;
+}
+
+/* Icon for expand/collaspe buttons */
+.arrow-icon {
+  display: inline-block;
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('icons/expand.png');
+  vertical-align: middle;
+  transform: translateY(10%);
+}
+
+/* Icon for collasped arrow */
+.toggle-btn.expanded .arrow-icon {
+  background-image: url('icons/collapse.png');
+}
+
+/* Hide the collasped arrow by default */
+.toggle-btn:not(.collapsed) .up-arrow {
+  display: none;
+}
+
+/* Hide the expanded arrow icon when the .collapsed class is not present */
+.toggle-btn:not(.collapsed) .down-arrow {
+  display: inline-block;
+}
+
+/* Adjust the left margin */
+.custom-toggle-btn {
+  margin-left: 1rem; 
+}
+
+/* Add a margin to the add-info-container to prevent the collapse transition from affecting its layout */
+.add-info-container {
+  margin-top: 10px;
+}
+
+/* Customize the collapse transition duration */
+.add-info-list.collapsing {
+  max-height: 1000px; 
+  padding: 0; 
+  margin: 0; 
+  transition-duration: 0.75s;
+}
+
+/* Prevents the items in the list from moving to the right */
+.add-info-list.show {
+  max-height: 1000px; 
+  margin-bottom: 0px; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Default font size for additional details */
+.details {
+    font-size: 1rem;
+}
+
+/* Adjust the container so that it displays like a resume on larger devices */
+.resume-format {
+    display: flex;
+}
+
+/* Override defalt link display */
+.school-company a {
+  font-size: 1rem; 
+  font-weight: bold; 
+  color: inherit; 
+  text-decoration: none; 
+}
+
+/* Apply <h3> style to the .school-company link */
+.school-company {
+  font-size: 1rem; 
+  font-weight: bold; 
+  color: inherit; 
+  text-decoration: none; 
+}
+
+/* Style for city */
+.city {
+    margin-top: 1%;
+    margin-left: auto;
+  }
+
+/* Style for degree */
+.degree {
+    margin-top: 1%;
+}
+
+/* Style for education date */
+.edu-date {
+    margin-top: 1%;
+    margin-left: auto
+}
+
+/* Font size for tasks */
+.work-desc {
+    font-size: 16px
+}
+
+/* Override default values for h3 */
+h3 {
+  font-size: 1.25rem; 
+}
+
+/* Style for the PDF icon */
+.project-icon.pdf-icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  /* Add any other custom styles you want for the PDF icon */
+}
+
+/* Style for the PDF icon */
+.project-icon.linkedin-icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+
+/* Container that contains the icons on the main content */
+.icon-container {
+  display: flex;
+  justify-content: space-between; 
+  max-width: 200px; 
+  margin: 0 auto; 
+}
+
+/* Style individual icons if needed */
+.project-icon {
+  width: 30px; 
+  height: auto;
+  margin: 0 10px; 
+}
+
+/* Skill size */
+.skill {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+  
+/* Picture animation */
+* {
+    box-sizing: border-box;
+  }
+  .box {
+    width: 40vmin;
+    height: 40vmin;
+    border: none; /* Set border color to light mode background color */
+    position: relative;
+  }
+  .spin-container {
+    width: 100%;
+    height: 100%;
+    animation: spin 12s ease-in-out infinite alternate-reverse;
+    position: relative;
+  }
+  .shape {
+    width: 100%;
+    height: 100%;
+    transition: border-radius 1s ease-out;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite both alternate;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+  }
+  .bd {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(images/brianna-schuh-square.png); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    z-index: 2;
+  }
+  @keyframes morph {
+    0% { border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%; }
+    100% { border-radius: 40% 60%; }
+  }
+  
+/* Small screens */
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .name-and-title {
+    text-align: center; 
+    max-width: 100%; 
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .bschuh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-content {
+    padding: 0.2rem;
+    height: auto;
+    position: relative;
+  }
+  body#bootstrap-overrides {
+    padding: 1rem;
+    padding-top: 0.2rem;
+  }
+  #scroll-to-top img {
+    width: 3rem; 
+    height: 3rem; 
+  }
+  .city, .edu-date {
+    margin-left: 0; 
+  }
+  .school-company {
+    font-size: 1.25rem;
+  }
+  .school-company a {
+    font-size: 1.25rem;
+  }
+  .details#terra, .details#mit {
+    margin-top: 10%;
+  }
+  .section-font{
+    margin-top: 15%;
+  }
+}
+
+/* Media query for iPhone SE and below - Vertical */
+@media only screen and (max-width: 320px) {
+  .main-content {
+    margin-bottom: 15rem;
+    margin-top: -10px;
+  }
+  .profile-name {
+    font-size: 2.75rem;
+  }
+  .job-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* Media query for iPhone SE and below - Horizontal */
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  .main-content {
+    margin-bottom: 10rem;
+    margin-top: 0px;
+  }
+}
+
+/* Media query for screens between iPhone SE and iPhone 14 Pro - Vertical */
+@media only screen and (min-width: 321px) and (max-width: 393px) {
+  .main-content {
+    margin-bottom: 23rem;
+    margin-top: 10px;
+  }
+  .profile-name {
+    font-size: 4rem;
+  }
+  .job-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Media query for screens between iPhone SE and iPhone 14 Pro - Horizontal */
+@media only screen and (min-width: 569px) and (max-width: 852px) and (orientation: landscape) {
+  .main-content {
+    margin-bottom: 18rem;
+    margin-top: 0px;
+  }
+}
+
+/* Media query for screens between iPhone 14 Pro and iPhone 14 Pro Plus - Vertical */
+@media only screen and (min-width: 394px) and (max-width: 428px) {
+  .main-content {
+    margin-bottom: 25rem;
+    margin-top: 30px;
+  }
+}
+
+/* Media query for screens between iPhone 14 Pro and iPhone 14 Pro Plus - Horizontal */
+@media only screen and (min-width: 853px) and (max-width: 926px) and (orientation: landscape) {
+  .main-content {
+    margin-bottom: 20rem;
+    margin-top: 0px;
+  }
+}
+
+/* Medium and large screens */
+  @media (min-width: 768px) {
+    .col-md-6 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+
+/* Media query for small desktops with resolution 800x600 */
+@media (min-width: 800px) and (max-width: 1024px) {
+  .main-content {
+    margin-top: 0.5rem; 
+  }
+  #scroll-to-top img {
+    width: 1.75rem; 
+    height: 1.75rem; 
+  }
+}
+
+/* Media query for screens with a minimum width of 1920px */
+@media only screen and (min-width: 1920px) {
+  .main-content {
+    margin-top: 10rem;
+  }
+}
+
+/* Controll the motion */
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition-property: height, visibility;
+    transition-duration: .35s;
+  }
+}
