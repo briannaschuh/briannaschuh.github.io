@@ -67,8 +67,6 @@ body#bootstrap-overrides.dark-mode .navbar {
 
 /* Default styles for the GitHub icon */
 .github-icon {
-  width: 24px;
-  height: 24px;
   background-size: cover;
   transition: background-image 0.3s ease-in-out; 
   background-image: var(--github-icon-light);
@@ -373,16 +371,11 @@ h3 {
 
 /* Style for the PDF icon */
 .project-icon.pdf-icon {
-  width: 24px;
-  height: 24px;
   background-size: cover;
-  /* Add any other custom styles you want for the PDF icon */
 }
 
 /* Style for the PDF icon */
 .project-icon.linkedin-icon {
-  width: 24px;
-  height: 24px;
   background-size: cover;
 }
 
