@@ -9,6 +9,8 @@ function toggleDarkMode() {
     const sDs492GithubIcon = document.getElementById('s-ds492-github-icon');
     const portfolioGithubIcon = document.getElementById('portfolio-github-icon');
     const mainGithubIcon = document.getElementById('main-github-icon');
+    const pagepalGithubIcon = document.getElementById('pagepal-github-icon');
+
     
     body.classList.toggle('dark-mode');
     navbar.classList.toggle('navbar-dark');
@@ -21,12 +23,14 @@ function toggleDarkMode() {
         sDs492GithubIcon.src  = "icons/github-mark-white.png";
         portfolioGithubIcon.src  = "icons/github-mark-white.png";
         mainGithubIcon.src = "icons/github-mark-white.png";
+        pagepalGithubIcon.src = "icons/github-mark-white.png";
     } else {
         sDs363GithubIcon.src = "icons/github-mark.png";
         cpsc474GithubIcon.src = "icons/github-mark.png";
         sDs492GithubIcon.src = "icons/github-mark.png";
         portfolioGithubIcon.src = "icons/github-mark.png";
         mainGithubIcon.src = "icons/github-mark.png";
+        pagepalGithubIcon.src = "icons/github-mark.png";
     }
 }
 

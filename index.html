@@ -58,8 +58,8 @@
                 <div class="col-md-6 text-center text-md-start"> 
                     <div class="name-and-title">
                         <h1 class="profile-name">Brianna Schuh</h1>
-                        <h2 class="job-title">Data Scientist</h2>
-                        <p class="main-text">Hi! I'm a data scientist in the FinTech industry. I recently graduated with a B.S. in Statistics and Data Science from Yale University. I'm interested in statistical optimization and deep learning.</p>
+                        <h2 class="job-title">AI Enthusiast</h2>
+                        <p class="main-text">Hi! I'm a data scientist working at the intersection of AI engineering and backend development. I build tools that bring large language models into real-world workflows, including designing robust APIs, integrating vector databases, and developing agent systems. I studied Statistics and Data Science at Yale, and I'm interested in building intelligent systems that are fast, scalable, and practical. </p>
                         
                         <!-- Container for icons -->
                         <div class="icon-container">
@@ -69,7 +69,7 @@
                             <a href="https://linkedin.com/in/briannaschuh" target="_blank">
                                 <img id="profile-linkedin-icon" class="project-icon linkedin-icon" src="icons/linkedin.png" alt="LinkedIn" style="width: 24px; height:auto;">
                             </a>
-                            <a href="pdfs/Website Resume - Brianna Schuh.pdf" target="_blank" style="width: 24px; height:auto;">
+                            <a href="pdfs/Website Resume.pdf" target="_blank" style="width: 24px; height:auto;">
                                 <img class="project-icon pdf-icon" src="icons/pdf.png" alt="PDF">
                             </a>
                         </div>
@@ -316,56 +316,107 @@
     <!-- Experience -->
     <div id="experience" class="section bootstrap-overrides">
         <h2 class="section-font fade-in">Experience</h2>
-        <div class = "subsection fade-in">
+        <div class="subsection fade-in">
             <div class="details">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="resume-format">
-                            <h3 class = "school-company">
-                                <a href="https://www.bnymellon.com" target="_blank">BNY Mellon</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="resume-format">
-                            <span class="city">New York, NY</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="resume-format">
-                            <span class="degree">Data Scientist</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="resume-format">
-                            <span class="edu-date">August 2023 - Present</span>
-                        </div>
-                    </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="resume-format">
+                    <h3 class="school-company">
+                      <a href="https://www.bny.com" target="_blank">BNY</a>
+                    </h3>
+                  </div>
                 </div>
-            </div>
-            <!-- BNY Mellon Tasks -->
-            <div class = "add-info-container">
-                <ul class = "experience-list">
-                    <li class = "job-text">Using LLMs, embeddings, and other ML NLP techniques to build products for different divisions within the bank. </li>
-                </ul>
-            </div>
-            <!-- BNY Mellon Tech Stack -->
-            <h4 class="add-info">Tech Stack
+                <div class="col-md-6">
+                  <div class="resume-format">
+                    <span class="city">New York, NY</span>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Associate Role -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="resume-format">
+                    <span class="degree">Associate, Data Scientist II</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="resume-format">
+                    <span class="edu-date">March 2025 – Present</span>
+                  </div>
+                </div>
+              </div>
+              <div class="add-info-container">
+                <ul class="experience-list">
+                    <li class="job-text">
+                      Led the development of an AI-powered tool that helps model developers improve registration forms before submission to model risk governance, increasing first-pass yield to ~70% and reducing delays in risk tier assignment.
+                      <ul>
+                        <li>Built and deployed the FastAPI backend, designed the database schema in OracleDB, and enabled save/resume, usage tracking, and Word document export.</li>
+                        <li>Integrated a GPT-4-powered agent that dynamically constructs prompts based on model risk governance guidelines, providing developers with targeted feedback to improve responses in real time.</li>
+                        <li>Set up logging and a Splunk dashboard to monitor adoption, system performance, and error tracking across QA and production environments.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+              </div>
+          
+              <!-- Analyst Role -->
+              <div class="row" style="margin-top: 1rem;">
+                <div class="col-md-6">
+                  <div class="resume-format">
+                    <span class="degree">Early Careers Analyst, Data Science</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="resume-format">
+                    <span class="edu-date">August 2023 – March 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="add-info-container">
+                <ul class="experience-list">
+                    <li class="job-text">
+                      Designed and deployed an LLM-powered agent system that automated vendor data retrieval and query execution across internal sources, saving 52 hours per day—the equivalent of seven full-time employees.
+                      <ul>
+                        <li>Used OpenAI’s function calling to intelligently route queries to sub-agents, including those tied to specific Snowflake tables, PDF-based agents updated weekly via Microsoft Graph API, and a semantic search agent backed by Azure’s vector database.</li>
+                        <li>Built and deployed the FastAPI backend supporting agent orchestration using BNY’s internal AI platform, dynamic SQL generation, and SharePoint file ingestion workflows.</li>
+                      </ul>
+                    </li>
+                    <li class="job-text">
+                      Built a contract review copilot to assist the Commercial Law Group with vendor negotiations.
+                      <ul>
+                        <li>Achieved over 80% accuracy across 30 vendors through prompt tuning and LLM experimentation, enabling a projected $900K in annual savings in legal hours.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  
+                  
+                  
+              </div>
+          
+              <!-- Shared Tech Stack -->
+              <h4 class="add-info">Tech Stack
                 <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#bny2" aria-expanded="false" aria-controls="bny2">
-                    <span class="arrow-icon arrow-icon"></span>
+                  <span class="arrow-icon arrow-icon"></span>
                 </button>
-            </h4>        
-            <div class = "add-info-container">
-                <ul id = "bny2" class = "add-info-list collapse">
-                    <li class = "add-info-item"> Git </li>
-                    <li class = "add-info-item"> Jupyter Notebook </li>
-                    <li class = "add-info-item"> Python </li>
-                    <li class = "add-info-item"> Streamlit </li>
-                    <li class = "add-info-item"> SQL </li>
-                    <li class = "add-info-item"> VS Code </li>
+              </h4>
+              <div class="add-info-container">
+                <ul id="bny2" class="add-info-list collapse">
+                    <li class="add-info-item">FastAPI</li>
+                    <li class="add-info-item">Git</li>
+                    <li class="add-info-item">Jupyter Notebook</li>
+                    <li class="add-info-item">Microsoft Graph API</li>
+                    <li class="add-info-item">OracleDB</li>
+                    <li class="add-info-item">Python</li>
+                    <li class="add-info-item">SQL</li>
+                    <li class="add-info-item">Streamlit</li>
+                    <li class="add-info-item">VS Code</li>                    
                 </ul>
+              </div>
             </div>
-        </div>
+          </div>
+          
         <!-- Bloomberg Intership Details -->
         <div class = "subsection fade-in">
             <div class="details" id = "bloomberg">
@@ -538,13 +589,13 @@
                 <h4 class = "add-info"> Proficient</h4>
                 <div class = "add-info-container">
                     <ul class = "experience-list">
-                        <li class = "job-text"> Python, R </li>
+                        <li class = "job-text"> Python, SQL </li>
                     </ul>
                 </div>
                 <h4 class = "add-info"> Familiar</h4>
                 <div class = "add-info-container">
                     <ul class = "experience-list">
-                        <li class = "job-text"> SQL, HTML/CSS, JavaScript </li>
+                        <li class = "job-text"> R, HTML/CSS, JavaScript </li>
                     </ul>
                 </div>
             </div>
@@ -556,13 +607,13 @@
                 <h4 class = "add-info"> Proficient</h4>
                 <div class = "add-info-container">
                     <ul class = "experience-list">
-                        <li class = "job-text"> Python (Keras, TensorFlow, scikit-learn, Pandas, NumPy, SciPy), R (car, klaR, ks, dplyr, tidyr, ggplot2, glmnet)</li>
+                        <li class = "job-text"> Python (FastAPI, LlamaIndex, TensorFlow, scikit-learn, Pandas, NumPy)</li>
                     </ul>
                 </div>
                 <h4 class = "add-info"> Familiar</h4>
                 <div class = "add-info-container">
                     <ul class = "experience-list">
-                        <li class = "job-text"> Python (PyTorch, seaborn, Matplotlib, Flask), R (randomForest, Shiny, Leaflet, caret), Bootstrap </li>
+                        <li class = "job-text"> Python (asyncio, Pydantic, PyTorch, Streamlit), R (dplyr, tidyr, ggplot2), Bootstrap, React </li>
                     </ul>
                 </div>
             </div>
@@ -580,7 +631,7 @@
                 <h4 class = "add-info"> Familiar</h4>
                 <div class = "add-info-container">
                     <ul class = "experience-list">
-                        <li class = "job-text"> Git, Jira, PostgreSQL, Sublime Text</li>
+                        <li class = "job-text"> Git, Jira, OracleDB, PostgreSQL, Sublime Text</li>
                     </ul>
                 </div>
             </div>
@@ -590,10 +641,53 @@
     <!-- Projects Section -->
     <div id="projects" class="section#bootstrap-overrides">
         <h2 class = "section-font fade-in">Projects</h2>
+<!-- PagePal AI -->
+<div class="subsection fade-in">
+    <div id="pagepal-ai" class="details">
+        <h3 class="school-company">
+            PagePal AI – LLM Reading Tutor
+            <a href="https://github.com/briannaschuh/pagepal" target="_blank">
+                <img id="pagepal-github-icon" class="project-icon github-icon" src="icons/github-mark.png" alt="GitHub" style="width: 24px; height:auto;">
+            </a>  
+        </h3>
+        <div class="add-info-container">
+            <ul class="experience-list">
+                <li class="job-text"> Developing a full-stack AI-powered web application that helps users learn Spanish by reading books enriched with real-time GPT-based explanations. </li>
+                <li class="job-text"> Designed the backend using FastAPI, PostgreSQL, and Docker to handle book ingestion, chunking, vector embedding, and LLM-based explanations. </li>
+                <li class="job-text"> Created a React frontend that allows users to select books, view chunks of text, and receive contextual AI explanations for highlighted passages. </li>
+            </ul>
+            <ul class="experience-list">
+                <li class="job-text"><strong>Planned Features:</strong></li>
+                <li class="job-text">Integrate <code>pgvector</code> to support semantic search over book chunks, enabling more relevant and fluent explanations.</li>
+                <li class="job-text">Implement caching layer to reduce redundant LLM calls and improve performance.</li>
+                <li class="job-text">Add support for grammar explanations, explanation language toggles (EN/ES), and spaced-repetition quizzing to deepen language learning.</li>
+                <li class="job-text">Shape prompts using book difficulty level (i.e. A1, B2) to tailor LLM explanations to learner proficiency.</li>
+                <li class="job-text">Store AI outputs and metadata in the database to enable reuse and future analytics.</li>
+            </ul>
+        </div>
+        <h4 class="add-info">Tech Stack
+            <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#pagepal-tech" aria-expanded="false" aria-controls="pagepal-tech">
+                <span class="arrow-icon arrow-icon"></span>
+            </button>
+        </h4>  
+        <div class="add-info-container">
+            <ul id="pagepal-tech" class="add-info-list collapse">
+                <li class="add-info-item"> FastAPI</li>
+                <li class="add-info-item"> PostgreSQL</li>
+                <li class="add-info-item"> React</li>
+                <li class="add-info-item"> Docker</li>
+                <li class="add-info-item"> OpenAI API</li>
+                <li class="add-info-item"> Python</li>
+                <li class="add-info-item"> JavaScript</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
         <!-- Portfolio Website -->
         <div class = "subsection fade-in">
             <div id = "portfolio-website" class = "details">
-                <h3 class = "school-company">
+                <h3 class = "school-company" style="margin-top: 2rem;">
                     Portfolio Website
                     <a href="https://github.com/briannaschuh/briannaschuh.github.io" target="_blank">
                         <img id="portfolio-github-icon" class="project-icon github-icon" src="icons/github-mark.png" alt="GitHub" style="width: 24px; height:auto;">

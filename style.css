@@ -148,9 +148,9 @@ body#bootstrap-overrides {
 .main-text {
     font-size: 1rem;
     position: relative;
-    max-width: 50%;
+    max-width: 75%;
     word-wrap: break-word;
-    left: 25%;
+    left: 15%;
 }
 
 /* Container for my name, title, and description */
@@ -433,7 +433,7 @@ h3 {
     position: absolute;
     left: 0;
     top: 0;
-    background: url(images/brianna-schuh-square.png); /* Set the background image */
+    background: url(images/headshot.JPG); 
     background-size: cover;
     background-position: center;
     display: flex;
