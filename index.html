@@ -30,7 +30,7 @@
                             <a class="nav-link" href="#skills" onclick="collapseNavbar()">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects" onclick="collapseNavbar()">Projects</a>
+                            <a class="nav-link" href="#projects" onclick="collapseNavbar()">Personal Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact" onclick="collapseNavbar()">Contact</a>
@@ -57,9 +57,9 @@
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start"> 
                     <div class="name-and-title">
-                        <h1 class="profile-name">Brianna Schuh</h1>
+                        <h1 class="profile-name">Brianna "Bri" Schuh</h1>
                         <h2 class="job-title">AI Enthusiast</h2>
-                        <p class="main-text">Hi! I'm a data scientist working at the intersection of AI engineering and backend development. I build tools that bring large language models into real-world workflows, including designing robust APIs, integrating vector databases, and developing agent systems. I studied Statistics and Data Science at Yale, and I'm interested in building intelligent systems that are fast, scalable, and practical. </p>
+                        <p class="main-text">Hi! I'm Bri and I'm a data scientist interested in AI engineering and backend development. I build tools that bring large language models into real-world workflows, including designing robust APIs, integrating vector databases, and developing agent systems. I studied Statistics and Data Science at Yale, and I'm interested in building intelligent systems that are fast, scalable, and practical. </p>
                         
                         <!-- Container for icons -->
                         <div class="icon-container">
@@ -307,7 +307,7 @@
             </h4>
             <div class ="add-info-container">
                 <ul id = "mit2" class = "add-info-list collapse">
-                    <li class = "add-info-item"> Electronics: The Spirit of the Class (August 2018) </li>
+                    <li class = "add-info-item"> Electronics: The Spirit of the Class (August 2018)</li>
                     <li class = "add-info-item"> Integral Calculus: The Spirit of the Class (August 2018)</li>
                 </ul>
             </div>
@@ -316,6 +316,53 @@
     <!-- Experience -->
     <div id="experience" class="section bootstrap-overrides">
         <h2 class="section-font fade-in">Experience</h2>
+    <!-- OnCorps AI -->
+            <div class = "subsection fade-in">
+                <div class="details" id = "oncorps">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="resume-format">
+                                <h3 class = "school-company">
+                                    <a href="https://www.oncorps.ai" target="_blank">OnCorps AI</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resume-format">
+                                <span class="city">New York, NY (Remote)</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resume-format">
+                                <span class="degree">Director of Data Science</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resume-format">
+                                <span class="edu-date">October 2025 - Present</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- OnCorps AI Tasks -->
+                <div class = "add-info-container">
+                    <ul class = "experience-list">
+                        <li class ="job-text">Designing multi-agent workflows and LLM-powered solutions.</li>
+                    </ul>
+                </div>
+                <!-- OnCorps Tech Stack -->
+                <h4 class="add-info">Tech Stack
+                    <button class="toggle-btn custom-toggle-btn" data-bs-toggle="collapse" data-bs-target="#oncorps2" aria-expanded="false" aria-controls="oncorps2">
+                        <span class="arrow-icon arrow-icon"></span>
+                    </button>
+                </h4>
+                <div class = "add-info-container">
+                    <ul id = "oncorps2" class = "add-info-list collapse">
+                        <li class = "add-info-item"> Python </li>
+                    </ul>
+                </div>
+            </div>
+    <!-- BNY -->
         <div class="subsection fade-in">
             <div class="details">
               <div class="row">
@@ -328,7 +375,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="resume-format">
-                    <span class="city">New York, NY</span>
+                    <span class="city">New York, NY (Hybrid)</span>
                   </div>
                 </div>
               </div>
@@ -342,19 +389,26 @@
                 </div>
                 <div class="col-md-6">
                   <div class="resume-format">
-                    <span class="edu-date">March 2025 – Present</span>
+                    <span class="edu-date">March 2025 – October 2025</span>
                   </div>
                 </div>
               </div>
               <div class="add-info-container">
                 <ul class="experience-list">
                     <li class="job-text">
-                      Led the development of an AI-powered tool that helps model developers improve registration forms before submission to model risk governance, increasing first-pass yield to ~70% and reducing delays in risk tier assignment.
+                        Led development of an AI-powered tool that assists model developers in completing model registration forms for Model Risk Management (MRM), improving first pass yield from 0% to 81% and significantly reducing delays in risk tier assignments.
                       <ul>
-                        <li>Built and deployed the FastAPI backend, designed the database schema in OracleDB, and enabled save/resume, usage tracking, and Word document export.</li>
-                        <li>Integrated a GPT-4-powered agent that dynamically constructs prompts based on model risk governance guidelines, providing developers with targeted feedback to improve responses in real time.</li>
-                        <li>Set up logging and a Splunk dashboard to monitor adoption, system performance, and error tracking across QA and production environments.</li>
+                        <li>Developed and deployed a FastAPI backend with async endpoints and Pydantic validation, enabling evaluation, save/resume, dynamic form generation, and Word export.</li>
+                        <li>Designed OracleDB schema to capture form structure, user responses, agent feedback, and interaction logs, ensuring data integrity, synchronization with master records, and auditability of API activity.</li>
+                        <li>Built a GPT-4.1–powered evaluation workflow where the backend dynamically constructs prompts with question-specific guidelines and user input; partnered with MRM associates to iteratively refine them, improving accuracy and user trust.</li>
+                        <li>Implemented logging and a Splunk dashboard to monitor adoption, system performance, and error tracking across QA and production environments.</li>
                       </ul>
+                    </li>
+                    <li class="job-text">
+                        Served as a speaker/panelist at four events—including BNY’s Engineering Analyst Program graduation, the annual BNY Sophomore Summit, the annual Association of Lationo Professionals for America (ALPFA) Career Workshop, the annual BNY Emerging Talent Summit—sharing insights on Generative AI with early-career and student audiences.
+                    </li>
+                    <li class="job-text">
+                        Co-led and organized a “Prompt-a-thon” with the Hispanic/Latinx Leadership Forum (employee resource group), introducing members to Generative AI prompting on BNY’s internal AI platform while managing logistics, structuring hands-on exercises, and fostering an inclusive learning environment.
                     </li>
                   </ul>
                   
@@ -378,8 +432,8 @@
                     <li class="job-text">
                       Designed and deployed an LLM-powered agent system that automated vendor data retrieval and query execution across internal sources, saving 52 hours per day—the equivalent of seven full-time employees.
                       <ul>
-                        <li>Used OpenAI’s function calling to intelligently route queries to sub-agents, including those tied to specific Snowflake tables, PDF-based agents updated weekly via Microsoft Graph API, and a semantic search agent backed by Azure’s vector database.</li>
-                        <li>Built and deployed the FastAPI backend supporting agent orchestration using BNY’s internal AI platform, dynamic SQL generation, and SharePoint file ingestion workflows.</li>
+                        <li>Used OpenAI’s function calling to intelligently route queries to sub-agents, including those tied to specific Snowflake tables, PDF-based agents updated weekly via Microsoft Graph API, and a semantic search agent backed by Azure AI Search.</li>
+                        <li>Built and deployed the FastAPI backend supporting agent orchestration, dynamic SQL generation, and SharePoint file ingestion workflows.</li>
                       </ul>
                     </li>
                     <li class="job-text">
@@ -403,13 +457,20 @@
               </h4>
               <div class="add-info-container">
                 <ul id="bny2" class="add-info-list collapse">
+                    <li class="add-info-item">asyncio</li>
+                    <li class="add-info-item">Azure AI Search</li>
                     <li class="add-info-item">FastAPI</li>
                     <li class="add-info-item">Git</li>
+                    <li class="add-info-item">GitLab</li>
+                    <li class = "add-info-item"> Jira </li>
                     <li class="add-info-item">Jupyter Notebook</li>
                     <li class="add-info-item">Microsoft Graph API</li>
                     <li class="add-info-item">OracleDB</li>
+                    <li class="add-info-item">Pydantic</li>
                     <li class="add-info-item">Python</li>
+                    <li class="add-info-item">Splunk</li>
                     <li class="add-info-item">SQL</li>
+                    <li class="add-info-item">SQLAlchemy</li>
                     <li class="add-info-item">Streamlit</li>
                     <li class="add-info-item">VS Code</li>                    
                 </ul>
@@ -430,7 +491,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="resume-format">
-                            <span class="city">Princeton, NJ</span>
+                            <span class="city">Princeton, NJ (On-site)</span>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -490,7 +551,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="resume-format">
-                            <span class="city">New York, NY</span>
+                            <span class="city">New York, NY (Remote)</span>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -540,7 +601,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="resume-format">
-                            <span class="city">Princeton, NJ</span>
+                            <span class="city">Princeton, NJ (Remote)</span>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -580,7 +641,7 @@
     </div>
 
     <!-- Skills Section -->
-    <div id="skills" class="section#bootstrap-overrides">
+    <div id="skills" class="section bootstrap-overrides">
         <h2 class = "section-font fade-in">Skills</h2>
         <!-- Programming Languages -->
         <div class = "subsection fade-in">
@@ -613,7 +674,7 @@
                 <h4 class = "add-info"> Familiar</h4>
                 <div class = "add-info-container">
                     <ul class = "experience-list">
-                        <li class = "job-text"> Python (asyncio, Pydantic, PyTorch, Streamlit), R (dplyr, tidyr, ggplot2), Bootstrap, React </li>
+                        <li class = "job-text"> Python (asyncio, Jinja2, Pydantic, PyTorch, SQLAlchemy, Streamlit), R (dplyr, tidyr, ggplot2), Bootstrap, React </li>
                     </ul>
                 </div>
             </div>
@@ -623,15 +684,14 @@
             <div id = "tools" class = "details">
                 <h3 class = "school-company">Tools and Technologies</h3>
                 <h4 class = "add-info"> Proficient</h4>
-                <div class = "add-info-container">
                     <ul class = "experience-list">
-                        <li class = "job-text"> Jupyter Notebook, RStudio, Visual Studio Code (VS Code)</li>
+                        <li class = "job-text"> Git, Jupyter Notebook, pgvector, PostgreSQL, Splunk, VS Code</li>
                     </ul>
                 </div>
                 <h4 class = "add-info"> Familiar</h4>
                 <div class = "add-info-container">
                     <ul class = "experience-list">
-                        <li class = "job-text"> Git, Jira, OracleDB, PostgreSQL, Sublime Text</li>
+                        <li class = "job-text"> Alembic, Azure AI Search, Docker, GitLab, Jira, OracleDB, RStudio, Sublime Text</li>
                     </ul>
                 </div>
             </div>
@@ -639,14 +699,17 @@
     </div>
 
     <!-- Projects Section -->
-    <div id="projects" class="section#bootstrap-overrides">
-        <h2 class = "section-font fade-in">Projects</h2>
+    <div id="projects" class="section bootstrap-overrides">
+        <h2 class = "section-font fade-in">Personal Projects</h2>
+        <p class="disclaimer-text">
+            All projects in this section were created independently by me and are not affiliated with any past or current employer.
+        </p>
 <!-- PagePal AI -->
 <div class="subsection fade-in">
     <div id="pagepal-ai" class="details">
         <h3 class="school-company">
             PagePal AI – LLM Reading Tutor
-            <a href="https://github.com/briannaschuh/pagepal" target="_blank">
+            <a href="https://github.com/briannaschuh/pagepalai" target="_blank">
                 <img id="pagepal-github-icon" class="project-icon github-icon" src="icons/github-mark.png" alt="GitHub" style="width: 24px; height:auto;">
             </a>  
         </h3>
@@ -672,13 +735,22 @@
         </h4>  
         <div class="add-info-container">
             <ul id="pagepal-tech" class="add-info-list collapse">
-                <li class="add-info-item"> FastAPI</li>
-                <li class="add-info-item"> PostgreSQL</li>
-                <li class="add-info-item"> React</li>
+                <li class="add-info-item"> Alembic</li>
+                <li class="add-info-item"> asyncio</li>
                 <li class="add-info-item"> Docker</li>
-                <li class="add-info-item"> OpenAI API</li>
-                <li class="add-info-item"> Python</li>
+                <li class="add-info-item"> FastAPI</li>
+                <li class="add-info-item"> HTML/CSS</li>
                 <li class="add-info-item"> JavaScript</li>
+                <li class="add-info-item"> Jinja2</li>
+                <li class="add-info-item"> LlamaIndex</li>
+                <li class="add-info-item"> OpenAI API</li>
+                <li class="add-info-item"> pgvector</li>
+                <li class="add-info-item"> PostgreSQL</li>
+                <li class="add-info-item"> Pydantic</li>
+                <li class="add-info-item"> Python</li>
+                <li class="add-info-item"> React</li>
+                <li class="add-info-item"> SQL</li>
+                <li class="add-info-item"> SQLAlchemy</li>
             </ul>
         </div>
     </div>
@@ -687,12 +759,12 @@
         <!-- Portfolio Website -->
         <div class = "subsection fade-in">
             <div id = "portfolio-website" class = "details">
-                <h3 class = "school-company" style="margin-top: 2rem;">
+                <h3 class = "school-company">
                     Portfolio Website
                     <a href="https://github.com/briannaschuh/briannaschuh.github.io" target="_blank">
                         <img id="portfolio-github-icon" class="project-icon github-icon" src="icons/github-mark.png" alt="GitHub" style="width: 24px; height:auto;">
                     </a>  
-                    <a href="https://briannaschuh.github.io" target="_blank">
+                    <a href="https://briannaschuh.com" target="_blank">
                         <img class = "project-icon" src="icons/link-icon.png" alt="Website" style="width: 24px; height:auto;">
                     </a>
                 </h3>
@@ -716,6 +788,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
             <!-- Senior Thesis -->
             <div class = "subsection fade-in">
                 <div id = "senior-thesis" class = "details">
@@ -833,10 +906,15 @@
     </div>
 
     <!-- Contact Section -->
-    <div id="contact" class="section#bootstrap-overrides">
-        <h2 class = "section-font fade-in">Contact</h2>
-        <div class = "subsection fade-in">
-            <p>If you would like to discuss AI/ML, seek advice, or potentially work together on a project, please feel free to reach out to me on LinkedIn. </p>
+    <div id="contact" class="section bootstrap-overrides">
+        <h2 class="section-font fade-in">Contact</h2>
+        <div class="subsection fade-in">
+        <p>
+            If you would like to discuss AI/ML, please feel free to reach out to me on 
+            <a href="https://www.linkedin.com/in/briannaschuh" target="_blank" rel="noopener noreferrer">
+            LinkedIn.
+            </a>
+        </p>
         </div>
     </div>
 

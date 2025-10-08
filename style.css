@@ -201,10 +201,29 @@ body#bootstrap-overrides {
     margin-left: 20px; 
 }
 
-/* Top margins for subsections in each section */
-.details#terra, .details#mit, .details#bloomberg, .details#sp, .details#extern, .details#frameworks, .details#tools, .details#senior-thesis, .details#cribbage-ai-proj, .details#s-ds363 {
+/* Uniform spacing between experience subsections */
+#experience .subsection + .subsection { margin-top: 2.5rem; }
+
+/* Make sure collapsible tech-stack areas don't collapse the gap */
+#experience .add-info-container { margin-bottom: 1rem; }
+
+/* Uniform spacing between any subsections in any section */
+.section.bootstrap-overrides .subsection + .subsection {
   margin-top: 2.5rem;
 }
+
+/* Give each subsection a little breathing room at the bottom too */
+.section.bootstrap-overrides .subsection {
+  padding-bottom: 1.5rem;
+}
+
+/* Tech Stack / collapsibles: add a touch of space */
+.add-info {
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;  /* was 0; prevents cramped look */
+}
+
+
 
 /* Icons */
 .project-icon {
@@ -243,16 +262,15 @@ body#bootstrap-overrides {
   opacity: 1;
 }
 
- /* Styles for both light and dark themes */
-.section#bootstrap-overrides {
-    background-color: #f8f9fa; 
-    color: #333; 
+/* Styles for both light and dark themes */
+.section.bootstrap-overrides {
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-/* Styles for dark mode */
-body#bootstrap-overrides.dark-mode .section#bootstrap-overrides {
-    background-color: #333;
-    color: #f8f9fa;
+body#bootstrap-overrides.dark-mode .section.bootstrap-overrides {
+  background-color: #333;
+  color: #f8f9fa;
 }
 
 /* Font for headings */
@@ -591,3 +609,4 @@ h3 {
     transition-duration: .35s;
   }
 }
+
