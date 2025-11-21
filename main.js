@@ -86,39 +86,24 @@ window.onload = function() {
     });
 };
   
-// Manage fade for content
+// Manage fade for any element with .fade-in
 document.addEventListener("DOMContentLoaded", function () {
     function applyFadeInEffect() {
-        const sections = document.querySelectorAll(".subsection.fade-in");
-        sections.forEach((section) => {
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const viewportHeight = window.innerHeight;
+        const elements = document.querySelectorAll(".fade-in");
+        const viewportHeight = window.innerHeight;
 
-            if (sectionTop < viewportHeight && sectionBottom > 0) {
-                section.classList.add("active");
+        elements.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            const elTop = rect.top;
+            const elBottom = rect.bottom;
+
+            if (elTop < viewportHeight && elBottom > 0) {
+                el.classList.add("active");
             }
         });
     }
+
     applyFadeInEffect();
-    window.addEventListener("scroll", applyFadeInEffect);
-});
 
-//  Manage fade for headers
-document.addEventListener("DOMContentLoaded", function () {
-    function applyFadeInEffect() {
-        const sections = document.querySelectorAll(".section-font.fade-in");
-
-        sections.forEach((section) => {
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const viewportHeight = window.innerHeight;
-
-            if (sectionTop < viewportHeight && sectionBottom > 0) {
-                section.classList.add("active");
-            }
-        });
-    }
-    applyFadeInEffect();
     window.addEventListener("scroll", applyFadeInEffect);
 });

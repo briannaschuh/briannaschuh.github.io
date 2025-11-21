@@ -251,15 +251,18 @@ body#bootstrap-overrides {
   }
 }
 
-/* Manage fade-ins for sections */
-.section-font.fade-in, .subsection.fade-in {
-  opacity: 0;
-  transition: opacity 1.5s ease-out;
+.fade-in {
+  animation: none !important;              /* prevent the global fadeIn animation */
+  opacity: 0;                              /* start invisible */
+  transform: translateY(10px);             /* slight slide-up effect (optional) */
+  transition: opacity 0.8s ease-out,
+              transform 0.8s ease-out;
 }
 
-/* General fade-ins */
+/* When JS adds .active, fade/slide it into view */
 .fade-in.active {
   opacity: 1;
+  transform: translateY(0);
 }
 
 /* Styles for both light and dark themes */
